@@ -1,3 +1,4 @@
+/* General styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -63,6 +64,46 @@ section p {
     font-size: 1.2em;
     color: #666;
 }
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #0044cc;
+    color: white;
+    font-size: 1.2em;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: #0044cc;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+i.fab.fa-whatsapp {
+    color: #25D366;
+    margin-right: 0.5rem;
+}
+
 footer {
     background-color: #003399; /* Matches the color of the nav bar */
     color: white;
