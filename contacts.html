@@ -11,10 +11,10 @@
         }
     </style>
     <script>
-        (function(){
+        (function() {
             var correctPassword = "1234";
             function checkPassword() {
-                var password = prompt("Please Contact admin for password to view contacts:");
+                var password = prompt("Please contact admin for the password to view contacts:");
                 if (password !== correctPassword) {
                     alert("Incorrect password. You will be redirected to the home page.");
                     window.location.href = "index.html";
@@ -40,13 +40,16 @@
             <h2>Alumni Contacts</h2>
             <p>List of alumni contacts will be here.</p>
             <!-- Add contacts information here -->
-            <a href="https://wa.me/'+254714867698" target="_blank"> Machua </a>
-
+            <a href="https://wa.me/254714867698" target="_blank">
+                <i class="fab fa-whatsapp"></i> Machua
+            </a>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Cliff-Tech. All rights reserved.</p>
     </footer>
     
+    <!-- Include Font Awesome for WhatsApp icon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 </body>
 </html>
