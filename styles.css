@@ -133,6 +133,45 @@ footer {
     width: 100%;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Shadow for the footer */
 }
+#events {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#events h2 {
+    color: #0044cc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.event {
+    margin-bottom: 30px;
+}
+
+.event h3 {
+    color: #003399;
+    margin-top: 0;
+}
+
+.event p {
+    color: #555;
+}
+
+.event-images {
+    display: flex;
+    gap: 10px;
+}
+
+.event-images img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 
 footer p {
     margin: 0;
