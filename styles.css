@@ -27,7 +27,8 @@ header p {
 
 /* Navigation Styles */
 nav {
-    width: 100%; /* Ensure the nav spans the full width */
+    position: relative; /* Make navigation part of the document flow */
+    margin: 20px 0; /* Add margin to separate it from surrounding content */
 }
 
 nav ul {
@@ -36,26 +37,28 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #003399; /* Navigation background color */
+    background-color: transparent; /* No background color */
 }
 
 nav ul li {
-    margin: 0 15px; /* Space between navigation items */
+    margin: 5px; /* Space between navigation items */
 }
 
 nav ul li a {
     color: white; /* Link text color */
     text-decoration: none; /* Remove underline */
-    font-size: 1.2em; /* Font size for links */
+    font-size: 1em; /* Font size for links */
     padding: 10px 15px; /* Padding around the text */
-    display: block; /* Make the link fill the list item */
-    border-radius: 5px; /* Rounded corners for links */
-    transition: background-color 0.3s ease; /* Smooth background color change on hover */
+    display: inline-block; /* Make the link fit the content */
+    border-radius: 8px; /* Rounded corners for links */
+    background-color:#333; /* Background color for links */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background color and scaling on hover */
 }
 
 nav ul li a:hover {
     background-color: #002266; /* Darker background color on hover */
-    color: red;
+    color:#ffcc00;
+    transform: scale(1.05); /* Slightly scale up on hover */
 }
 
 nav ul li a:focus {
@@ -133,6 +136,13 @@ footer {
     width: 100%;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Shadow for the footer */
 }
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Events Styles */
 #events {
     padding: 20px;
     background-color: #f9f9f9;
@@ -173,12 +183,6 @@ footer {
     cursor: pointer;
 }
 
-
-footer p {
-    margin: 0;
-    font-size: 1em;
-}
-
 /* Responsive Styles */
 @media (max-width: 768px) {
     header h1 {
@@ -189,12 +193,16 @@ footer p {
         font-size: 1.2em;
     }
 
+    nav {
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+
     nav ul {
         flex-direction: column; /* Stack navigation items vertically */
     }
 
     nav ul li {
-        margin: 10px 0; /* Space between items in vertical layout */
+        margin: 5px 0; /* Space between items in vertical layout */
     }
 
     section h2 {
