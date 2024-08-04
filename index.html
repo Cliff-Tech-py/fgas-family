@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FREDS Grammar Alumni</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -59,12 +60,18 @@
                 <p>Location: Karatina</p>
                 <p>Join us as we bid our dear brother farewell, and give him a proper burial as one of us Freds Grammar family.</p>
                 <div class="event-images">
-                    <img src="e1.jpg" alt="Event Image 1">
-                    <img src="e2.jpg" alt="Event Image 2">
-                    <img src="e3.jpg" alt="Event Image 3">
+                    <a href="e1.jpg" data-lightbox="event-1" data-title="Event Image 1">
+                        <img src="e1.jpg" alt="Event Image 1">
+                    </a>
+                    <a href="e2.jpg" data-lightbox="event-1" data-title="Event Image 2">
+                        <img src="e2.jpg" alt="Event Image 2">
+                    </a>
+                    <a href="e3.jpg" data-lightbox="event-1" data-title="Event Image 3">
+                        <img src="e3.jpg" alt="Event Image 3">
+                    </a>
                 </div>
             </div>
-        
+    
             <!-- Add more events as needed -->
         </section>
         
@@ -73,5 +80,6 @@
         </footer>
         
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 </html>
