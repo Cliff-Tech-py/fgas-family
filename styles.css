@@ -1,3 +1,46 @@
+/* Flexbox layout for the main sections */
+main {
+    display: flex;
+    flex-wrap: wrap; /* Allow sections to wrap on small screens */
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Style each section */
+section {
+    flex: 1 1 22%; /* Grow, shrink, and set base width */
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    min-width: 200px; /* Prevents them from becoming too narrow */
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: #0044cc;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Stack the sections vertically on smaller screens */
+    main {
+        flex-direction: column;
+    }
+
+    section {
+        flex: 1 1 100%; /* Take full width on small screens */
+        margin-bottom: 20px;
+    }
+}
+
 .about-founder {
     max-width: 750px;
     margin: 20px auto;
